@@ -1,0 +1,740 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Constantinople"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Constantinople,Thracia"
+      }
+    ],
+    "description": "Mass edit cells in column Birthplace"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Didymoteicho"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Didymoteicho,Thracia"
+      }
+    ],
+    "description": "Mass edit cells in column Birthplace"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nicaea"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nicaea,Asia"
+      }
+    ],
+    "description": "Mass edit cells in column Birthplace"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column Birthplace"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": ",",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column Birthplace by separator"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Birthplace 2",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column Birthplace 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Birthplace 3",
+    "description": "Remove column Birthplace 3"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Birthplace 2",
+    "newColumnName": "birth_province",
+    "description": "Rename column Birthplace 2 to birth_province"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Birthplace 1",
+    "newColumnName": "birth_city",
+    "description": "Rename column Birthplace 1 to birth_city"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Date_of_birth",
+    "newColumnName": "date_of_birth",
+    "description": "Rename column Date_of_birth to date_of_birth"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Name",
+    "newColumnName": "name",
+    "description": "Rename column Name to name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Succession",
+    "newColumnName": "succession",
+    "description": "Rename column Succession to succession"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Reign",
+    "newColumnName": "reign",
+    "description": "Rename column Reign to reign"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Time",
+    "newColumnName": "duration",
+    "description": "Rename column Time to duration"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Deaths",
+    "newColumnName": "deaths",
+    "description": "Rename column Deaths to deaths"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "deaths",
+    "newColumnName": "death",
+    "description": "Rename column deaths to death"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_province",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Hispania_Baetica"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hispania"
+      }
+    ],
+    "description": "Mass edit cells in column birth_province"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          " Galba SERVIVS  GALBA  IMPERATOR CAESAR AVGVSTVS \n"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " Galba SERVIVS GALBA  IMPERATOR CAESAR AVGVSTVS \n"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "IMPERATOR",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column name by separator"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name 1",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "(",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column name 1 by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 1 2",
+    "description": "Remove column name 1 2"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name 1 3",
+    "expression": "join ([coalesce(cells['name 1 3'].value,''),coalesce(cells['name 1 4'].value,''),coalesce(cells['name 1 5'].value,''),coalesce(cells['name 2'].value,''),coalesce(cells['name 3'].value,''),coalesce(cells['name 4'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name 1 3 using expression join ([coalesce(cells['name 1 3'].value,''),coalesce(cells['name 1 4'].value,''),coalesce(cells['name 1 5'].value,''),coalesce(cells['name 2'].value,''),coalesce(cells['name 3'].value,''),coalesce(cells['name 4'].value,'')],'')"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 1 4",
+    "description": "Remove column name 1 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 1 5",
+    "description": "Remove column name 1 5"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 2",
+    "description": "Remove column name 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 3",
+    "description": "Remove column name 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "name 4",
+    "description": "Remove column name 4"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "name 1 1",
+    "newColumnName": "coloquial_name",
+    "description": "Rename column name 1 1 to coloquial_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "name 1 3",
+    "newColumnName": "regnal_name",
+    "description": "Rename column name 1 3 to regnal_name"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "regnal_name",
+    "description": "Remove column regnal_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coloquial_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coloquial_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "coloquial_name",
+    "expression": "value.replace(/[\\p{Zs}\\s]+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column coloquial_name using expression value.replace(/[\\p{Zs}\\s]+/,' ')"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_of_birth",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column date_of_birth by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_of_birth 1",
+    "expression": "join ([coalesce(cells['date_of_birth 1'].value,''),coalesce(cells['date_of_birth 2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column date_of_birth 1 using expression join ([coalesce(cells['date_of_birth 1'].value,''),coalesce(cells['date_of_birth 2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "coloquial_name",
+      "date_of_birth 1",
+      "date_of_birth 3",
+      "date_of_birth 4",
+      "birth_city",
+      "birth_province",
+      "succession",
+      "reign",
+      "duration",
+      "death"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_of_birth 3",
+    "expression": "join ([coalesce(cells['date_of_birth 3'].value,''),coalesce(cells['date_of_birth 4'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column date_of_birth 3 using expression join ([coalesce(cells['date_of_birth 3'].value,''),coalesce(cells['date_of_birth 4'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "coloquial_name",
+      "date_of_birth 1",
+      "date_of_birth 3",
+      "birth_city",
+      "birth_province",
+      "succession",
+      "reign",
+      "duration",
+      "death"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "date_of_birth 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "17November"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "17 November"
+      }
+    ],
+    "description": "Mass edit cells in column date_of_birth 1"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date_of_birth 1",
+    "newColumnName": "birth_day",
+    "description": "Rename column date_of_birth 1 to birth_day"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "date_of_birth 3",
+    "newColumnName": "birth_year",
+    "description": "Rename column date_of_birth 3 to birth_year"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_year",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column birth_year using expression value.trim()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_day",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "c.",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column birth_day by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_year",
+    "expression": "join ([coalesce(cells['birth_year'].value,''),coalesce(cells['birth_day 2'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column birth_year using expression join ([coalesce(cells['birth_year'].value,''),coalesce(cells['birth_day 2'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "coloquial_name",
+      "birth_day 1",
+      "birth_year",
+      "birth_city",
+      "birth_province",
+      "succession",
+      "reign",
+      "duration",
+      "death"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_day 1",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column birth_day 1"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_day 1",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column birth_day 1 using expression value.toString()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_year",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          ""
+        ],
+        "fromBlank": true,
+        "fromError": false,
+        "to": "NA"
+      }
+    ],
+    "description": "Mass edit cells in column birth_year"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "birth_year",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column birth_year using expression value.toString()"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "reign",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "–",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column reign by separator"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "reign 3",
+    "description": "Remove column reign 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "reign 4",
+    "description": "Remove column reign 4"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "reign 5",
+    "description": "Remove column reign 5"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "reign 2",
+    "newColumnName": "end_of_reign",
+    "description": "Rename column reign 2 to end_of_reign"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "reign 1",
+    "newColumnName": "start_of_reign",
+    "description": "Rename column reign 1 to start_of_reign"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "start_of_reign",
+    "guessCellType": false,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": " ",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column start_of_reign by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "start_of_reign 3",
+    "expression": "join ([coalesce(cells['start_of_reign 3'].value,''),coalesce(cells['start_of_reign 4'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column start_of_reign 3 using expression join ([coalesce(cells['start_of_reign 3'].value,''),coalesce(cells['start_of_reign 4'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "coloquial_name",
+      "birth_day 1",
+      "birth_year",
+      "birth_city",
+      "birth_province",
+      "succession",
+      "start_of_reign 1",
+      "start_of_reign 2",
+      "start_of_reign 3",
+      "start_of_reign 5",
+      "start_of_reign 6",
+      "start_of_reign 7",
+      "end_of_reign",
+      "duration",
+      "death"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "start_of_reign 3",
+    "expression": "join ([coalesce(cells['start_of_reign 3'].value,''),coalesce(cells['start_of_reign 5'].value,'')],'')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column start_of_reign 3 using expression join ([coalesce(cells['start_of_reign 3'].value,''),coalesce(cells['start_of_reign 5'].value,'')],'')"
+  },
+  {
+    "op": "core/column-reorder",
+    "columnNames": [
+      "coloquial_name",
+      "birth_day 1",
+      "birth_year",
+      "birth_city",
+      "birth_province",
+      "succession",
+      "start_of_reign 1",
+      "start_of_reign 2",
+      "start_of_reign 3",
+      "start_of_reign 6",
+      "start_of_reign 7",
+      "end_of_reign",
+      "duration",
+      "death"
+    ],
+    "description": "Reorder columns"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "start_of_reign 1",
+    "description": "Remove column start_of_reign 1"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "start_of_reign 3",
+    "expression": "grel:value.replace(/[A-Z]/,\"\").replace(/[a-z]/,\"\")",
+    "onError": "set-to-blank",
+    "newColumnName": "start_of_reign",
+    "columnInsertIndex": 8,
+    "description": "Create column start_of_reign at index 8 based on column start_of_reign 3 using expression grel:value.replace(/[A-Z]/,\"\").replace(/[a-z]/,\"\")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "start_of_reign",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "25,306"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "306"
+      }
+    ],
+    "description": "Mass edit cells in column start_of_reign"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "start_of_reign 3",
+    "description": "Remove column start_of_reign 3"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "start_of_reign 2",
+    "description": "Remove column start_of_reign 2"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "start_of_reign 6",
+    "description": "Remove column start_of_reign 6"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "start_of_reign 7",
+    "description": "Remove column start_of_reign 7"
+  }
+]
